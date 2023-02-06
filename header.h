@@ -3,7 +3,9 @@
 //menu
 void mainmenu();
 void lengthmenu();
+void sizemenu();
 
+//length
 //km
 void length_km_m(double inputkm);
 void length_km_dm(double inputkm);
@@ -59,3 +61,24 @@ void length_nm_dm(double inputnm);
 void length_nm_cm(double inputnm);
 void length_nm_mm(double inputnm);
 void length_nm_miu(double inputnm);
+
+//size
+//km^2
+void size_km_m(double sizekm);
+void size_km_dm(double sizekm);
+void size_km_cm(double sizekm);
+
+//m
+void size_m_km(double sizem);
+void size_m_dm(double sizem);
+void size_m_cm(double sizem);
+
+//dm^2
+void size_dm_km(double sizedm);
+void size_dm_m(double sizedm);
+void size_dm_cm(double sizedm);
+
+//cm^2
+void size_cm_km(double sizecm);
+void size_cm_m(double sizecm);
+void size_cm_dm(double sizecm);
