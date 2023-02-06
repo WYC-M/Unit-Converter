@@ -9,7 +9,7 @@ int main()
 	int input = 0;//输入数据
 	
 	std::cout << "=======================================" << std::endl;
-	std::cout << "单位换算器 Unit Converter v0.1Beta By WYC-M" << std::endl;
+	std::cout << "单位换算器 Unit Converter v0.2Beta By WYC-M" << std::endl;
 	std::cout << "=======================================" << std::endl;
 
 	std::cout << std::endl;
@@ -18,6 +18,8 @@ int main()
 
 	std::cout << "请选择数据类型:";
 	std::cin >> menumain;
+
+	std::cout << std::endl;
 
 	if (menumain == 1)
 	{
@@ -276,7 +278,121 @@ int main()
 		}
 	}
 
+	if (menumain == 2)
+	{
+		sizemenu();
+
+		std::cout << "请选择输入数据单位:";
+		std::cin >> menuinput;
+		std::cout << "请选择输出数据单位:";
+		std::cin >> menuoutput;
+
+		std::cout << std::endl;
+
+		if (menuinput == menuoutput)//报错
+		{
+			std::cout << "输入数据单位不得与输出数据单位一致" << std::endl;
+			std::cout << "按回车键退出" << std::endl;
+			std::cin.get();
+			return 0;
+		}
+
+		std::cout << "请输入数据:____________________";
+
+		//输出单位(每个单位都是2个字符)
+		if (menuinput == 1)
+		{
+			std::cout << "km^2";
+		}
+		if (menuinput == 2)
+		{
+			std::cout << "m^2 ";
+		}
+		if (menuinput == 3)
+		{
+			std::cout << "dm^2";
+		}
+		if (menuinput == 4)
+		{
+			std::cout << "cm^2";
+		}
+
+		for (int i = 0; i < 24; i++)//退24格,到达前面打印的下划线开头
+		{
+			std::cout << "\b";
+		}
+
+		std::cin >> input;
+
+		std::cout << std::endl;
+
+		if (menuinput == 1)//km^2
+		{
+			if (menuoutput == 2)
+			{
+				size_km_m(input);
+			}
+			if (menuoutput == 3)
+			{
+				size_km_dm(input);
+			}
+			if (menuoutput == 4)
+			{
+				size_km_cm(input);
+			}
+		}
+
+		if (menuinput == 2)//m
+		{
+			if (menuoutput == 1)
+			{
+				size_m_km(input);
+			}
+			if (menuoutput == 3)
+			{
+				size_m_dm(input);
+			}
+			if (menuoutput == 4)
+			{
+				size_m_cm(input);
+			}
+		}
+
+		if (menuinput == 3)//dm
+		{
+			if (menuoutput == 1)
+			{
+				size_dm_km(input);
+			}
+			if (menuoutput == 2)
+			{
+				size_dm_m(input);
+			}
+			if (menuoutput == 4)
+			{
+				size_dm_cm(input);
+			}
+		}
+
+		if (menuinput == 4)//cm
+		{
+			if (menuoutput == 1)
+			{
+				size_cm_km(input);
+			}
+			if (menuoutput == 2)
+			{
+				size_cm_m(input);
+			}
+			if (menuoutput == 3)
+			{
+				size_cm_dm(input);
+			}
+		}
+	}
+
 	//退出
+	std::cout << std::endl;
 	std::cout << "按回车键退出" << std::endl;
 	std::cin.get();
 	std::cin.get();
