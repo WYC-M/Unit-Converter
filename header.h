@@ -4,6 +4,12 @@
 void mainmenu();
 void lengthmenu();
 void sizemenu();
+void volumemenu();
+void speedmenu();
+void timemenu();
+void cubagemenu();
+void densitymenu();
+void itwmenu();
 
 //length
 //km
@@ -82,3 +88,71 @@ void size_dm_cm(double sizedm);
 void size_cm_km(double sizecm);
 void size_cm_m(double sizecm);
 void size_cm_dm(double sizecm);
+
+//volume
+//m^3
+void volume_m_dm(double volumem);
+void volume_m_cm(double volumem);
+
+//dm^3
+void volume_dm_m(double volumedm);
+void volume_dm_cm(double volumedm);
+
+//cm^3
+void volume_cm_m(double volumecm);
+void volume_cm_dm(double volumecm);
+
+//speed
+//km/h
+void speed_kmh_ms(double speedkmh);
+
+//m/s
+void speed_ms_kmh(double speedms);
+
+//time
+//h
+void time_h_min(double timeh);
+void time_h_s(double timeh);
+
+//min
+void time_min_h(double timemin);
+void time_min_s(double timemin);
+
+//s
+void time_s_h(double times);
+void time_s_min(double times);
+
+//L
+void cubage_L_mL(double cuabgel);
+
+//mL
+void cubage_mL_L(double cuabgeml);
+
+//density(√‹∂»)
+//kg/m^3
+void density_kgm_gcm(double densitykgm);
+
+//g/cm^3
+void density_gcm_kgm(double densitygcm);
+
+//itw(¥Ê¥¢µ•ŒªªªÀ„)
+//TB
+void itw_tb(double ittb);
+
+//GB
+void itw_gb(double itgb);
+
+//MB
+void itw_mb(double itmb);
+
+//KB
+void itw_kb(double itkb);
+
+//KB
+void itw_kb(double itkb);
+
+//B
+void itw_byte(double itbyte);
+
+//b
+void itw_bit(double itbit);
