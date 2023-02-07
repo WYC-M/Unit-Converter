@@ -8,20 +8,17 @@ int main()
 	int menuoutput = 0;//输出数据单位
 	double input = 0;//输入数据
 
-	std::cout << "===========================================" << std::endl;
-	std::cout << "单位换算器 Unit Converter v0.3Beta By WYC-M" << std::endl;
-	std::cout << "===========================================" << std::endl;
+	start();
 
-	std::cout << std::endl;
-	std::cout << std::endl;
+	std::cout << "[选项设置]" << std::endl;
 
 	mainmenu();
 
 	std::cout << "请选择数据类型:";
 	std::cin >> menumain;
 
-	std::cout << std::endl;
-	std::cout << std::endl;
+	cls();
+	std::cout << "[选项设置]" << std::endl;
 
 	if (menumain == 1)
 	{
@@ -32,8 +29,8 @@ int main()
 		std::cout << "请选择输出数据单位:";
 		std::cin >> menuoutput;
 
-		std::cout << std::endl;
-		std::cout << std::endl;
+		cls();
+		std::cout << "[选项设置]" << std::endl;
 
 		if (menuinput == menuoutput)//报错
 		{
@@ -84,8 +81,9 @@ int main()
 
 		std::cin >> input;
 
-		std::cout << std::endl;
-		std::cout << std::endl;
+		cls();
+
+		std::cout << "[结果输出]" << std::endl;
 
 		if (menuinput == 1)//km
 		{
@@ -293,7 +291,8 @@ int main()
 		std::cout << "请选择输出数据单位:";
 		std::cin >> menuoutput;
 
-		std::cout << std::endl;
+		cls();
+		std::cout << "[选项设置]" << std::endl;
 
 		if (menuinput == menuoutput)//报错
 		{
@@ -332,8 +331,9 @@ int main()
 
 		std::cin >> input;
 
-		std::cout << std::endl;
-		std::cout << std::endl;
+		cls();
+
+		std::cout << "[结果输出]" << std::endl;
 
 		if (menuinput == 1)//km^2
 		{
@@ -409,7 +409,8 @@ int main()
 		std::cout << "请选择输出数据单位:";
 		std::cin >> menuoutput;
 
-		std::cout << std::endl;
+		cls();
+		std::cout << "[选项设置]" << std::endl;
 
 		if (menuinput == menuoutput)//报错
 		{
@@ -444,8 +445,9 @@ int main()
 
 		std::cin >> input;
 
-		std::cout << std::endl;
-		std::cout << std::endl;
+		cls();
+
+		std::cout << "[结果输出]" << std::endl;
 
 		if (menuinput == 1)//m^3
 		{
@@ -493,7 +495,8 @@ int main()
 		std::cout << "请选择输出数据单位:";
 		std::cin >> menuoutput;
 
-		std::cout << std::endl;
+		cls();
+		std::cout << "[选项设置]" << std::endl;
 
 		if (menuinput == menuoutput)//报错
 		{
@@ -524,8 +527,9 @@ int main()
 
 		std::cin >> input;
 
-		std::cout << std::endl;
-		std::cout << std::endl;
+		cls();
+
+		std::cout << "[结果输出]" << std::endl;
 
 		if (menuinput == 1)//m^3
 		{
@@ -547,7 +551,8 @@ int main()
 		std::cout << "请选择输出数据单位:";
 		std::cin >> menuoutput;
 
-		std::cout << std::endl;
+		cls();
+		std::cout << "[选项设置]" << std::endl;
 
 		if (menuinput == menuoutput)//报错
 		{
@@ -582,8 +587,9 @@ int main()
 
 		std::cin >> input;
 
-		std::cout << std::endl;
-		std::cout << std::endl;
+		cls();
+
+		std::cout << "[结果输出]" << std::endl;
 
 		if (menuinput == 1)//h
 		{
@@ -631,7 +637,8 @@ int main()
 		std::cout << "请选择输出数据单位:";
 		std::cin >> menuoutput;
 
-		std::cout << std::endl;
+		cls();
+		std::cout << "[选项设置]" << std::endl;
 
 		if (menuinput == menuoutput)//报错
 		{
@@ -662,8 +669,9 @@ int main()
 
 		std::cin >> input;
 
-		std::cout << std::endl;
-		std::cout << std::endl;
+		cls();
+
+		std::cout << "[结果输出]" << std::endl;
 
 		if (menuinput == 1)//L
 		{
@@ -685,7 +693,8 @@ int main()
 		std::cout << "请选择输出数据单位:";
 		std::cin >> menuoutput;
 
-		std::cout << std::endl;
+		cls();
+		std::cout << "[选项设置]" << std::endl;
 
 		if (menuinput == menuoutput)//报错
 		{
@@ -716,8 +725,9 @@ int main()
 
 		std::cin >> input;
 
-		std::cout << std::endl;
-		std::cout << std::endl;
+		cls();
+
+		std::cout << "[结果输出]" << std::endl;
 
 		if (menuinput == 1)//kg/m^3
 		{
@@ -737,7 +747,8 @@ int main()
 		std::cout << "请选择输入数据单位:";
 		std::cin >> menuinput;
 
-		std::cout << std::endl;
+		cls();
+		std::cout << "[选项设置]" << std::endl;
 
 		std::cout << "请输入数据:____________________";
 
@@ -774,8 +785,9 @@ int main()
 
 		std::cin >> input;
 
-		std::cout << std::endl;
-		std::cout << std::endl;
+		cls();
+
+		std::cout << "[结果输出]" << std::endl;
 
 		if (menuinput == 1)//TB
 		{

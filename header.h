@@ -1,5 +1,11 @@
 #pragma once
 
+//输出开头文字
+void start();
+
+//清屏
+void cls();
+
 //menu
 void mainmenu();
 void lengthmenu();
